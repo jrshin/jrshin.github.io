@@ -9,12 +9,13 @@
 title: Jrshin Github Blog
 email: jrshin@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Hi, My name is Jrshin. I'm just another data anylist and web designer
+  from Chicago who loves coding and fixing things.
+  This blog is an my works. It will use lots of HTML, CSS and a little bit
+  Javascript, Json. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://jrshin.github.io/" # the base hostname & protocol for your site
-twitter_username: JrShinCalebChen
+twitter_username: JrshinChen
 github_username:  jrshin
 
 # Build settings
