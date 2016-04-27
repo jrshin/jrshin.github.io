@@ -1,23 +1,83 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-title: Jrshin Github Blog
-email: jrshin@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
+title:            Jrshin Blog
+description: >
   Hi, My name is Jrshin. I'm just another data anylist and web designer
   from Chicago who loves coding and fixing things.
   This blog is an my works. It will use lots of HTML, CSS and a little bit
-  Javascript, Json. 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://jrshin.github.io/" # the base hostname & protocol for your site
-twitter_username: JrshinChen
-github_username:  jrshin
+  Javascript, Json.
+disqus_shortname: 
+reading_time:     true
+words_per_minute: 200
+# Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
+# When testing locally leave blank or use http://localhost:4000
+url:
 
-# Build settings
-markdown: kramdown
+# Owner/author information
+owner:
+  name:           Jrshin Chen
+  avatar:         avatar1.jpg
+  bio:            "A bioimaging analyst and software developer from Taiwan at Chicago."
+  email:          jrshin@gmail.com
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:        JrshinChen
+  facebook:       
+  github:         jrshin
+  stackexchange:  
+  linkedin:       jrshinchen
+  instagram:      
+  flickr:         
+  tumblr:         
+  # google plus id, include the '+', eg +mmistakes
+  google_plus:
+
+# Background image to be tiled on all pages
+background: 
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:   
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:         
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/Chicago
+future:      true
 highlighter: pygments
+markdown:    kramdown
+gems:
+  - jekyll-sitemap
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
+
+# Amount of post to show on home page
+paginate: 5
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: true
+
+  coderay:
+    coderay_line_numbers: nil
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+# Octopress
+# Default extensions
+post_ext: md
+page_ext: md
+# Found in _templates/
+post_layout: post
+page_layout: page
+# Format titles with titlecase?
+titlecase: true
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
